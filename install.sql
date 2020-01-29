@@ -20,10 +20,10 @@ CREATE TABLE gallery (
 
 INSERT INTO category (name) 
   VALUES 
+  ('Animal'), 
   ('Clown'),
-  ('Animals'), 
   ('Magic'), 
-  ('Artists');
+  ('Acrobat');
 
 CREATE TABLE shows (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
