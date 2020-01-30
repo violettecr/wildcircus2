@@ -1,0 +1,96 @@
+#gallery {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-color: darkslategray;
+}
+
+#gallery h1 {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2em;
+  color: white;
+  padding-top: 70px;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.3em;
+  color: rgba(224, 222, 222, 0.575);
+  font-style: italic;
+  padding-top: 30px;
+}
+
+#gallery #container {
+  margin: 0 auto;
+  background-color: darkslategray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#gallery #structure {
+  width: auto;
+  margin: 30px auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  background: rgb(97, 163, 144);
+}
+
+#gallery #title p{
+  font-size: 25px;
+  color: white;
+  background: rgb(132, 182, 167) !important;
+  padding: 10px;
+  text-transform: uppercase;
+
+}
+
+#gallery #date p{
+  font-size: 15px;
+  color: white;
+}
+
+#gallery #categoryName p{
+  font-size: 15px;
+  color: white;
+}
+
+#gallery #pictureName p{
+  font-size: 15px;
+  color: white;
+}
+
+#gallery #pictureName img {
+  width: auto;
+  height: 300px;
+}
+
+#gallery #pictureInfo {
+  width: 100%;
+  height: auto;
+  background: rgba(94, 109, 105, 0.657);
+  color: white;
+}
+
+@media(max-width: 800px) { /*phone*/
+  #gallery #structure {
+    width: 70%;
+    margin: 20px;
+  }
+}
+@media(min-width: 801px) and (max-width: 1200px){ /*tablet*/
+  #gallery #structure {
+    width: auto;
+    margin: 20px;
+  }
+}

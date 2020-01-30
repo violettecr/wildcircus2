@@ -74,6 +74,8 @@ const Visitor = () => {
     readURL(this);
   });
 
+  /* -------------------RETURN------------------*/
+
  return (
    <div id="visitor">
      <h1>Share your experience of Wild Circus</h1>
@@ -88,7 +90,7 @@ const Visitor = () => {
       <select
         onChange={(event) => setForm({ ...form, category: event.target.value })}
       >
-        <option selected="unselected" id="cat">Category's picture</option>
+        <option id="cat">Category's picture</option>
         {category.map((category) => (
           <option value={category.id} key={category.name}>{category.name}</option>
         ))}

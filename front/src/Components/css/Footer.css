@@ -1,0 +1,14 @@
+#footer {
+  max-height: 100px;
+  width: 100%;
+  position: bottom;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  background-color: aquamarine;
+}
+
+#footer p {
+  margin: 0;
+  padding: 0;
+}
