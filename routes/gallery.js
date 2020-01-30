@@ -87,14 +87,15 @@ router.post('/', upload.single('picture'), (req, res) => {
   }
   if (req.body) {
     const {
-      category_id, title, date, picture_name
+      category_id, title, date
     } = req.body;
-    if (!category_id || !title || !date || !picture_name) {
+    const { filename } = req.file;
+    if (!category_id || !title || !date || !filename) {
       res.sendStatus(400);
     } else {
       connection.query(`INSERT INTO gallery (category_id, title, date, picture_name)
         VALUES (?, ?, ?, ?)`,
-      [category_id, title, date, picture_name],
+      [category_id, title, date, file],
       (err) => {
         if (err) {
           console.log(err);
