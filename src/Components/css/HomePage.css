@@ -1,2 +1,78 @@
+
 #HomePage {
+  margin: 0 auto;
+  padding: 0 auto;
+  background: darkslategray;
+}
+
+#title {
+  color: white;
+  font-size: 7em;
+  text-align: center;
+  margin: auto;
+}
+
+#performances {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#laugh, #dream, #marvel {
+  height: auto;
+  width: 30%;
+  background-color: rgba(47, 79, 79, 0.548);
+  margin: 40px 20px;
+  padding: 20px;
+  text-align: justify;
+  color: white;
+}
+
+#HomePage h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+}
+
+#laugh h2, #dream h2, #marvel h2{
+  text-align: center;
+  margin: 20px auto;
+}
+
+@media(max-width: 800px) { /*phone*/
+  #title {
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    margin: auto;
+  }
+  
+  #laugh, #dream, #marvel {
+    height: auto;
+    width: 100%;
+    background-color: rgba(47, 79, 79, 0.548);
+    padding: 40px;
+    text-align: justify;
+    color: white;
+  }
+}
+
+@media(min-width: 801px) and (max-width: 1200px){ /*tablet*/
+  #title {
+    color: white;
+    font-size: 6em;
+    text-align: center;
+    margin: auto;
+  }
+  
+  #laugh, #dream, #marvel {
+    height: auto;
+    width: 45%;
+    background-color: rgba(47, 79, 79, 0.548);
+    padding: 40px;
+    text-align: justify;
+    color: white;
+  }
 }
