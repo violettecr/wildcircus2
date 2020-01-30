@@ -2,8 +2,8 @@ const mysql = require('mysql');
 
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'root', // à copmléter
-  password: 'password', // à compléter
+  user: 'root',
+  password: 'password',
   database: 'wildcircus2',
 });
 
